@@ -69,6 +69,3 @@ $ docker run -it -p 8000:8000 your_origin/sample-node-app
 ```
 
 Now head to http://localhost:8000 and see your running app!
-
-
-
