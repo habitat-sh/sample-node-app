@@ -19,10 +19,7 @@ $ cd sample-node-app
 ```
 
 ### Building the Package:
-```bash
-$ hab plan init -s node
-$ vim habitat/plan.sh
-```
+You'll see a directory called habitat.  Open the habitat/plan.sh file:
 
 Your habitat/plan.sh should look like this:
 ```sh
