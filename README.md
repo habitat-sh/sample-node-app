@@ -6,7 +6,7 @@ Hello!  Welcome to the Habitat Sample Node App!
 
 To practice packaging/running this app with Habitat
 
-###Workstation Prereqs:
+### Workstation Prereqs:
 * Install and set up Habitat [(Instructions here)](https://www.habitat.sh/tutorials/download/)
 * Install Docker [(Instructions here)](https://www.docker.com/community-edition)
 * Clone this repository
@@ -18,7 +18,7 @@ $  git clone https://github.com/habitat-sh/sample-node-app.git
 $ cd sample-node-app
 ```
 
-###Building the Package:
+### Building the Package:
 ```bash
 $ hab plan init -s node
 $ vim habitat/plan.sh
@@ -53,7 +53,7 @@ And run build
 (studio) $ build
 ```
 
-###Running the Package with Docker
+### Running the Package with Docker
 
 Still in your studio, right after the build, export that package to a docker image
 ```bash
