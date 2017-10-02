@@ -36,7 +36,7 @@ Let's add in a version number
 pkg_name=sample-node-app
 pkg_origin=your_origin
 pkg_scaffolding="core/scaffolding-node"
-pkg_version="0.1.0"
+pkg_version="1.0.1"
 ```
 
 Now save and close the file.
