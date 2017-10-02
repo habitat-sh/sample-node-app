@@ -1,7 +1,7 @@
 pkg_name=sample-node-app
 pkg_origin=your_origin
 pkg_scaffolding="core/scaffolding-node"
-pkg_version="0.2.0"
+pkg_version="1.0.1"
 
 declare -A scaffolding_env
 
