@@ -10,7 +10,10 @@ nconf.file({ file: nconf_file });
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: nconf.get('message')});
+  res.render('index', {
+    title: nconf.get('message'),
+    title_tag: nconf.get('title_tag')
+  });
 });
 
 module.exports = router;

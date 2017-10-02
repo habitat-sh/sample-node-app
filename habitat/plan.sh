@@ -1,5 +1,5 @@
 pkg_name=sample-node-app
-pkg_origin=core
+pkg_origin=ryankeairns
 pkg_scaffolding="core/scaffolding-node"
 pkg_version="0.2.0"
 
