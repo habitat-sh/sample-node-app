@@ -1,8 +1,8 @@
-# Habitat Sample Node App!
+# Habitat Sample Node App
 
-Hello!  Welcome to the Habitat Sample Node App!
+Welcome to the Habitat Sample Node App!
 
-![habitat-sample-node-app](https://user-images.githubusercontent.com/446285/31062135-fc00c5ce-a6ed-11e7-80a3-573db5a0fbe6.png)
+![habitat-sample-node-app](https://user-images.githubusercontent.com/446285/31078915-96033340-a749-11e7-906c-7861521894fc.png)
 
 
 ## Instructions
