@@ -24,14 +24,14 @@ You'll see a directory called habitat.  Open the habitat/plan.sh file:
 Your habitat/plan.sh should look like this:
 ```sh
 pkg_name=sample-node-app
-pkg_origin=you_origin
+pkg_origin=your_origin
 pkg_scaffolding="core/scaffolding-node"
 ```
 
 Let's add in a version number
 ```sh
 pkg_name=sample-node-app
-pkg_origin=you_origin
+pkg_origin=your_origin
 pkg_scaffolding="core/scaffolding-node"
 pkg_version="0.1.0"
 ```
