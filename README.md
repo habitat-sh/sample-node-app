@@ -57,7 +57,7 @@ And run build
 
 Still in your studio, right after the build, export that package to a docker image
 ```bash
-(studio) $ hab pkg export docker your_origin/sample-node-app
+(studio) $ hab pkg export docker ./results/<habitat artifact>.hart
 ```
 
 Then exit out of the studio:
