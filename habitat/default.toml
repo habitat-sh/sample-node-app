@@ -4,3 +4,6 @@
 
 # Message of the Day
 message = "Hello, World!"
+
+[app]
+port = 8000
