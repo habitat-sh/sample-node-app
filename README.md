@@ -37,8 +37,8 @@ $ hab setup
 
 **Note** - the origin name you enter during setup will need to be added to the plan.sh file mentioned in the next section.
 
-### Building the Package:
-You'll see a directory called habitat.  Open the habitat/plan.sh file:
+### Building the Package
+From the `/habitat` directory in this repo, open the habitat/plan.sh file:
 
 Your habitat/plan.sh should look like this:
 ```sh
