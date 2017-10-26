@@ -15,7 +15,7 @@ Alternatively, you can use the instructions below if you simply want to build an
 
 To practice packaging/running this app with Habitat
 
-### Workstation Prereqs:
+### Workstation Prerequisites
 * Install and set up Habitat [(Instructions here)](https://www.habitat.sh/tutorials/download/)
 * Install Docker [(Instructions here)](https://www.docker.com/community-edition)
 * Clone this repository
@@ -46,7 +46,7 @@ pkg_name=sample-node-app
 pkg_origin=your_origin
 pkg_scaffolding="core/scaffolding-node"
 ```
-First, change the pkg_origin to the origin name your created in the previous section. If you're following the demo instructions (link above), then use the origin name you created in the Builder web app.
+First, change the pkg_origin to the origin name your created in the previous section. If you're following the [demo instructions](https://www.habitat.sh/demo/), then use the origin name you created in the Builder web app.
 
 Next, let's add in a version number
 ```sh
