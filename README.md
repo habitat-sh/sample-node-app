@@ -46,7 +46,9 @@ pkg_name=sample-node-app
 pkg_origin=your_origin
 pkg_scaffolding="core/scaffolding-node"
 ```
-First, change the pkg_origin to the origin name your created in the previous section. If you're following the [demo instructions](https://www.habitat.sh/demo/), then use the origin name you created in the Builder web app.
+First, change the value of `your_origin` to the origin name your created in the previous section. 
+
+If you're following the [demo instructions](https://www.habitat.sh/demo/), then use the origin name you created in the Builder web app.
 
 Next, let's add in a version number
 ```sh
