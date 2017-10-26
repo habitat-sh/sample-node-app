@@ -31,7 +31,11 @@ $ cd sample-node-app
 Before you can build the app, you'll need to create an origin and accompanying keys.
 The quickest way to do this is by running `hab setup` and following the prompts.
 
-Note that the origin name you use here will need to be added to the plan.sh file mentioned in the next section.
+```bash
+$ hab setup
+```
+
+**Note** - the origin name you enter during setup will need to be added to the plan.sh file mentioned in the next section.
 
 ### Building the Package:
 You'll see a directory called habitat.  Open the habitat/plan.sh file:
