@@ -2,6 +2,12 @@
 
 Welcome to the Habitat Sample Node App!
 
+### Follow the demo instructions
+
+For the full experience, check out the [Habitat Demo instructions](https://www.habitat.sh/demo/) on the habitat.sh website. This will walk you through getting setup on the Habitat Builder web app and publishing this sample app to Docker Hub.
+
+Alternatively, you can use the instructions below if you just wan to build and run the app locally.
+
 ![habitat-sample-node-app](https://user-images.githubusercontent.com/446285/31078915-96033340-a749-11e7-906c-7861521894fc.png)
 
 
@@ -21,6 +27,12 @@ $  git clone https://github.com/habitat-sh/sample-node-app.git
 $ cd sample-node-app
 ```
 
+### Setup for First-time Users
+Before you can build the app, you'll need to create an origin and accompanying keys.
+The quickest way to do this is by running `hab setup` and following the prompts.
+
+Note that the origin name you use here will need to be added to the plan.sh file mentioned in the next section.
+
 ### Building the Package:
 You'll see a directory called habitat.  Open the habitat/plan.sh file:
 
@@ -30,8 +42,9 @@ pkg_name=sample-node-app
 pkg_origin=your_origin
 pkg_scaffolding="core/scaffolding-node"
 ```
+First, change the pkg_origin to the origin name your created in the previous section. If you're following the demo instructions (link above), then use the origin name you created in the Builder web app.
 
-Let's add in a version number
+Next, let's add in a version number
 ```sh
 pkg_name=sample-node-app
 pkg_origin=your_origin
