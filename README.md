@@ -8,7 +8,7 @@ For the full experience, check out the [Habitat Demo instructions](https://www.h
 
 Alternatively, you can use the instructions below if you simply want to build and run the app locally.
 
-![habitat-sample-node-app](https://user-images.githubusercontent.com/446285/31078915-96033340-a749-11e7-906c-7861521894fc.png)
+![habitat-sample-node-app](https://user-images.githubusercontent.com/274700/39158589-d1170792-4715-11e8-8e2a-1a2696944500.png)
 
 
 ## Instructions
@@ -46,7 +46,7 @@ pkg_name=sample-node-app
 pkg_origin=your_origin
 pkg_scaffolding="core/scaffolding-node"
 ```
-First, change the value of `your_origin` to the origin name your created in the previous section. 
+First, change the value of `your_origin` to the origin name your created in the previous section.
 
 If you're following the [demo instructions](https://www.habitat.sh/demo/), then use the origin name you created in the Builder web app.
 

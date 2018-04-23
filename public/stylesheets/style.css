@@ -30,15 +30,11 @@ footer {
 .logos {
   margin: 4em auto 0;
   width: 340px;
+  display: flex;
 }
 
-.habitat-logo {
-  float: left;
-}
-
-.nodejs-logo {
-  float: right;
-  margin-top: 15px;
+.logos img {
+  padding: 0 16px;
 }
 
 .habicat-jumping {
