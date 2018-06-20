@@ -1,3 +1,4 @@
 {
-	"message": "You are running version {{pkg.version}} of the Habitat Node.js sample app."
+  "title": "{{ cfg.title }}",
+  "message": "You are running version {{ pkg.version }} of the Habitat Node.js sample app."
 }
