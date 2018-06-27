@@ -84,7 +84,7 @@ Then exit the Studio:
 And start a Docker container with your newly created image:
 
 ```
-$ docker run -it -p 3000:3000 <YOUR_ORIGIN>/sample-node-app
+$ docker run -it -p 8000:8000 <YOUR_ORIGIN>/sample-node-app
 ```
 
-Now head to http://localhost:3000 and see your running app!
+Now head to http://localhost:8000 and see your running app!
