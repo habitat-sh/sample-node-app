@@ -1,4 +1,5 @@
 {
   "title": "Habitat - The fastest path from code to cloud native.",
-  "message": "Welcome to the Habitat Node.js sample app."
+  "message": "Welcome to the Habitat Node.js sample app.",
+  "port": 8000
 }

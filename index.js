@@ -1,6 +1,7 @@
 var app = require('./app');
 var http = require('http');
-var port = process.env.PORT || 8000;
+var nconf = require('nconf');
+var port = process.env.PORT || nconf.get('port') || 8000;
 
 app.set('port', port);
 
