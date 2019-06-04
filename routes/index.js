@@ -1,18 +1,18 @@
 var express = require('express');
 var router = express.Router();
-
-const nconf_file = process.env.APP_CONFIG || './default_config.json';
-
 var nconf = require('nconf');
-//nconf.file({ file: process.env.APP_CONFIG });
 
-nconf.file({ file: nconf_file });
+// For local-dev convenience, we'll use a hard-coded config file,
+// but in production, we'd like to take advantage of Habitat's support
+// for dynamic configuration, so we'll pass as an argument the path
+// to the config file that Habitat will render for us on startup.
+// See ./habitat/hooks/run for the implementation details.
+nconf.file({ file: process.argv[2] || './dev-config.json' });
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', {
-    title: nconf.get('message'),
-    title_tag: nconf.get('title_tag')
+    title: nconf.get('title'),
+    message: nconf.get('message')
   });
 });
 

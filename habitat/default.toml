@@ -1,6 +1,7 @@
-# Use this file to templatize your application's native configuration files.
-# See the docs at https://www.habitat.sh/docs/create-packages-configure/.
-# You can safely delete this file if you don't need it.
+# When Habitat starts this service, it'll use the values we define here
+# to render the templates we define in our plan's `config` directory.
+#
+# To learn more about Habitat's configuration features, see the docs at
+# https://www.habitat.sh/docs/developing-packages/#add-configuration.
 
-# Message of the Day
-message = "Hello, World!"
+title = "Habitat - The fastest path from code to cloud native."
