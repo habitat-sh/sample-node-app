@@ -35,10 +35,7 @@ jobs:
       with:
         docker_image: container-ci-demo/container-ci-demo
     - name: Build and push
-      uses: docker/build-push-action@v2
+      uses: docker/build-push-action@v1
       with:
         push: true
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
-        registry: docker.pkg.github.com
         tags: ${{ steps.prepare.outputs.tag }}
