@@ -40,4 +40,4 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
           repository: ${{ github.repository }}/container-ci-demo
-          tags: latest, ${{ docker_version }}
+          tags: latest, ${{ github.event.pull_request.head.sha }}
