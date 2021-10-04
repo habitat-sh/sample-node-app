@@ -33,7 +33,7 @@ jobs:
       id: prepare
       uses: Surgo/docker-smart-tag-action@v1
       with:
-        docker_image: ${{ github.repository }}/container-ci-demo
+        docker_image: container-ci-demo/container-ci-demo
     - name: Build and push
       uses: docker/build-push-action@v1
       with:
