@@ -37,4 +37,4 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
           repository: ${{ github.repository }}/container-ci-demo
-          tags: latest, ${{ pkg.version }}
+          tags: latest, {{ pkg.version }}
