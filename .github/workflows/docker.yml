@@ -30,9 +30,6 @@ jobs:
     #- run: npm i -g jest-cli
     #- run: npm test
     -
-      name: Create Docker Version
-      run: ./docker-build.sh
-    -
         name: Publish Dockerize App to GitHub Packages
         uses: docker/build-push-action@v1
         with:
