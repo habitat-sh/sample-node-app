@@ -29,13 +29,28 @@ jobs:
     #- run: npm run
     #- run: npm i -g jest-cli
     #- run: npm test
-    - name: Get smart tag
-      id: prepare
-      uses: Surgo/docker-smart-tag-action@v1
+    — name: Docker meta
+      id: meta
+      uses: crazy-max/ghaction-docker-meta@v2
       with:
-        docker_image: 
-    - name: Build and push
-      uses: docker/build-push-action@v1
-      with:
-        push: true
-        tags: ${{ steps.prepare.outputs.tag }}
+        images: phparkitect/phparkitect
+        tags: |
+          type=raw,value=latest,enable=${{ endsWith(GitHub.ref, 'master') }}
+          type=ref,event=tag
+        flavor: |
+          latest=false
+    -
+        name: Login to GitHub Container Registry
+        #if: GitHub.event_name != 'pull_request'
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+    — name: Build and push
+       uses: docker/build-push-action@v2
+       with:
+         context: .
+         #push: ${{ GitHub.event_name != 'pull_request' }}
+         tags: ${{ steps.meta.outputs.tags }}
+         labels: ${{ steps.meta.outputs.labels }}
