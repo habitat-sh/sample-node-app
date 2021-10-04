@@ -33,7 +33,7 @@ jobs:
       id: prepare
       uses: Surgo/docker-smart-tag-action@v1
       with:
-        docker_image: jchima/container-ci-demo
+        docker_image: 
     - name: Build and push
       uses: docker/build-push-action@v1
       with:
