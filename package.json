@@ -1,9 +1,10 @@
 {
   "name": "sample-node-app",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./index.js"
+    "start": "node ./index.js",
+    "test" : "jest"
   },
   "dependencies": {
     "express": "~4.16.3",
